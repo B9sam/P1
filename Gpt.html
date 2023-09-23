@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slide Navbar</title>
+  <link rel="stylesheet" type="text/css" href="styleslide.css">
+  <link href="https://fonts.googleapis.com/css?family=Jost:500&display=swap" rel="stylesheet">
+  <style>
+    /* Add your custom CSS here */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Jost', sans-serif;
+      background: linear-gradient(to bottom, #002223, #004E4F, #008080);
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+    }
+
+    .image-container {
+      flex: 1;
+      padding: 20px; /* Add spacing as needed */
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 400px; /* Adjust the maximum width as needed */
+    }
+
+    .form-container {
+      flex: 1;
+      padding: 20px; /* Add spacing as needed */
+      background: #eee;
+      border-radius: 60% / 10%;
+      transform: translateY(-180px);
+      transition: .8s ease-in-out;
+    }
+
+    .form-container label {
+      color: #008080;
+      transform: scale(.6);
+    }
+
+    /* Rest of your CSS */
+
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="image-container">
+      <img src="t.jpg" alt="Your Image">
+    </div>
+    <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="form-container">
+      <label for="chk" aria-hidden="true">Login</label>
+      <form>
+        <input type="email" name="email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password" required="">
+        <button>Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
